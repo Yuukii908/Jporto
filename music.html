@@ -1,0 +1,448 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Universe | JOSIDE</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/music.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="music-body">
+
+    <!-- NAVBAR -->
+    <nav class="navbar music-navbar">
+    <a href="index.html" class="logo">
+        <span class="logo-symbol">✦</span>
+        JOSAN
+    </a>
+
+
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="nav-links" id="nav-links">
+        <a href="index.html">HOME</a>
+        <a href="index.html#about">ABOUT</a>
+        <a href="index.html#projects">PROJECTS</a>
+        <a href="music.html" class="active">MUSIC</a>
+        <a href="index.html#contact">CONTACT</a>
+    </div>
+</nav>
+
+    <main class="music-page">
+
+        <!-- HERO -->
+        <section class="music-hero" data-reveal>
+            <div class="music-hero-content" data-reveal-child>
+                <span class="mini-label">// JOSIDE PERSONAL MUSIC ARCHIVE</span>
+
+                <h1>
+                    MUSIC IS<br>
+                    MY <span>UNIVERSE.</span>
+                </h1>
+
+                <p>
+                    A personal collection of sounds, memories,
+                    and stories — from the music I listen to
+                    to the music I create.
+                </p>
+
+                <a href="#listening-room" class="music-hero-link">
+                    EXPLORE MY SOUND <span>↓</span>
+                </a>
+            </div>
+
+            <div class="music-hero-art" data-reveal-child>
+                <div class="hero-art-orbit orbit-a"></div>
+                <div class="hero-art-orbit orbit-b"></div>
+                <div class="hero-art-core">J.</div>
+                <span class="hero-art-caption">SOUND / 001</span>
+            </div>
+
+            <div class="music-hero-index" data-reveal-child>MUSIC ARCHIVE — 2026</div>
+        </section>
+
+        <!-- LISTENING ROOM -->
+        
+<!-- LISTENING ROOM -->
+<section class="music-section listening-section" id="listening-room" data-reveal>
+
+    <div class="music-section-heading" data-reveal-child>
+        <div>
+            <span class="mini-label">// 01 — MY SOUND COLLECTION</span>
+            <h2>LISTENING <span>ROOM.</span></h2>
+        </div>
+        <p>
+            Every song has a story.
+            These are the sounds behind mine.
+        </p>
+    </div>
+
+    <!-- PLAYLIST COLLECTION -->
+    <div class="playlist-grid">
+
+        <article class="playlist-card" data-reveal-child>
+            <a  
+                href="https://open.spotify.com/playlist/1v6PIWRIXa0w74gBSZBq18?si=7GgUhBzkTRiZDGwo7xfc8w"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="playlist-cover cover-midnight">
+
+                <img src="assets/images/music/midnight.png" alt="Midnight Thoughts">
+
+                <span class="cover-number">01 / 03</span>
+                <div class="cover-overlay"></div>
+
+                <div class="cover-title">
+                    <span>PLAYLIST / 001</span>
+                    <h3>MIDNIGHT<br>THOUGHTS.</h3>
+                </div>
+                <span class="cover-play">↗</span>
+            </a>
+            <div class="playlist-info">
+                <div>
+                    <h3>Midnight Thoughts</h3>
+                    <p>For the nights that never end.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="playlist-card" data-reveal-child>
+            <a 
+                href="https://open.spotify.com/playlist/0k0WKMaoZs46MFTYHwZku5?si=4Iu2jX2JT861aQhSHUYKTw"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="playlist-cover cover-chillin">
+
+                <img src="assets/images/music/chillin.png" alt="Chillin Vibes">
+
+                <span class="cover-number">02 / 03</span>
+
+                <div class="cover-overlay"></div>
+
+                <div class="cover-title">
+
+                    <span>PLAYLIST / 002</span>
+                    <h3>CHILLIN'<br>VIBES.</h3>
+                </div>
+                <span class="cover-play">↗</span>
+            </a>
+            <div class="playlist-info">
+                <div>
+                    <h3>Chillin Vibes</h3>
+                    <p>Just Me Being Me.</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="playlist-card" data-reveal-child>
+            <a  
+                href="https://open.spotify.com/playlist/4gaa7g86lan7glRbJ30ZSG" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="playlist-cover cover-MeTime">
+
+                <img src="assets/images/music/me-time.png" alt="Me Time">
+
+                <span class="cover-number">03 / 03</span>
+
+                <div class="cover-overlay"></div>
+
+                <div class="cover-title">
+                    <span>PLAYLIST / 003</span>
+                    <h3>ME<br>TIME.</h3>
+                </div>
+                <span class="cover-play">↗</span>
+            </a>
+            <div class="playlist-info">
+                <div>
+                    <h3>Me Time</h3>
+                    <p>When there no one else's arround.</p>
+                </div>
+            </div>
+        </article>
+
+    </div>
+
+
+    <!-- PLAYLIST DETAIL PANEL -->
+<div class="playlist-detail" id="playlist-detail">
+
+    <div class="detail-art">
+        <img id="detail-image"
+             src="assets/images/music/midnight.png"
+             alt="Playlist artwork">
+    </div>
+
+    <div class="detail-content">
+        <span class="mini-label">// SELECTED PLAYLIST</span>
+
+        <span class="detail-number" id="detail-number">
+            PLAYLIST / 001
+        </span>
+
+        <h3 id="detail-title">MIDNIGHT THOUGHTS.</h3>
+
+        <p id="detail-description">
+            For the nights that never end.
+            A collection of sounds for quiet moments.
+        </p>
+
+        <div class="detail-actions">
+            <a href="https://open.spotify.com/playlist/1v6PIWRIXa0w74gBSZBq18?si=7GgUhBzkTRiZDGwo7xfc8w"
+               id="detail-spotify"
+               target="_blank"
+               rel="noopener noreferrer">
+                <span>↗</span> OPEN ON SPOTIFY
+            </a>
+
+            <button id="close-detail" type="button">
+                CLOSE ×
+            </button>
+        </div>
+    </div>
+
+</div>
+
+
+    <!-- FEATURED PLAYLIST -->
+    <div class="featured-playlist" data-reveal-child>
+
+        <div class="featured-playlist-art">
+            <img src="assets/images/music/featured.png" alt="A Soundtrack of My Life">
+            <span>JOSIDE / SELECTED</span>
+        </div>
+
+        <div class="featured-playlist-info">
+            <span class="mini-label">// PERSONAL COLLECTION</span>
+            <h3>A SOUNDTRACK<br>OF MY LIFE.</h3>
+            <p>
+                A collection of songs that capture
+                feelings, memories, and moments
+                I can't always put into words.
+            </p>
+
+           <a
+                href="https://open.spotify.com/playlist/4gaa7g86lan7glRbJ30ZSG"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="featured-playlist-link">
+
+                EXPLORE COLLECTION <span>↗</span>
+            </a>
+        </div>
+
+        <div class="featured-playlist-index">001</div>
+
+    </div>
+
+    <!-- SPOTIFY -->
+    <div class="spotify-section" id="spotify-playlist" data-reveal-child>
+
+        <div class="spotify-heading">
+            <div>
+                <span class="mini-label">// STREAMING PLATFORM</span>
+                <h3>LISTEN ON <span>SPOTIFY.</span></h3>
+            </div>
+
+            <span class="spotify-status">
+                <span></span> CONNECTED
+            </span>
+        </div>
+
+        
+<div class="spotify-now-playing">
+    <div>
+        <span class="mini-label">// CURRENTLY SELECTED</span>
+        <h4 id="spotify-current-title">MIDNIGHT THOUGHTS.</h4>
+    </div>
+
+    <span class="spotify-live-indicator">
+        <span></span> READY TO PLAY
+    </span>
+</div>
+
+<div class="spotify-frame" id="spotify-player">
+    <iframe
+        id="spotify-embed"
+        src="https://open.spotify.com/embed/playlist/6Vi0tvHoba0jCajrOJ6ma1?utm_source=generator"
+        width="100%"
+        height="352"
+        frameborder="0"
+        allowfullscreen
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy">
+    </iframe>
+</div>
+
+
+    </div>
+
+</section>
+
+
+        <!-- ORIGINAL MUSIC -->
+        <section class="music-section original-section" id="original-music" data-reveal>
+
+            <div class="music-section-heading" data-reveal-child>
+                <div>
+                    <span class="mini-label">// 02 — MY OWN CREATIONS</span>
+                    <h2>ORIGINAL <span>MUSIC.</span></h2>
+                </div>
+
+                <p>Personal compositions, made from feelings and memories.</p>
+            </div>
+
+            <div class="original-layout" data-reveal-child>
+
+                <!-- FEATURED TRACK -->
+                <div class="original-featured">
+                    <div class="original-cover">
+                        <img
+                            src="assets/images/music/original-cover.jpg"
+                            alt="Original music cover"
+                            onerror="this.style.display='none'"
+                        >
+
+                        <div class="original-cover-fallback">
+                            <span>JOSIDE</span>
+                            <strong>ORIGINAL<br>SOUND.</strong>
+                            <small>COMPOSITION / 001</small>
+                        </div>
+
+                        <div class="cover-overlay"></div>
+                    </div>
+
+                    <div class="original-details">
+                        <span class="music-category">// FEATURED COMPOSITION</span>
+                        <h3>Ayah, Coba Sekali Lagi — Track 01</h3>
+                        <p>
+                            An original composition. A collection of
+                            melodies, emotions, and moments translated
+                            into sound.
+                        </p>
+
+                        <div class="track-meta">
+                            <span>ORIGINAL</span>
+                            <span>24-BIT AUDIO</span>
+                            <span>JOSAN</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CUSTOM PLAYER -->
+                <div class="custom-player">
+
+                    <audio id="music-audio" preload="metadata"></audio>
+
+                    <div class="player-top">
+                        <span class="mini-label">// NOW PLAYING</span>
+                        <span class="player-live">
+                            <span></span> AUDIO SYSTEM
+                        </span>
+                    </div>
+
+                                    
+                    <div class="player-track">
+                        <div class="player-disc">
+                            <div class="disc-center">Js.</div>
+                        </div>
+
+                        <div class="player-track-info">
+                            <span>ORIGINAL COMPOSITION</span>
+                            <h3 id="track-title">Untitled — Track 01</h3>
+                            <p id="track-artist">JOSAN</p>
+
+                            <!-- MUSIC VISUALIZER -->
+                            <div class="music-visualizer" id="musicVisualizer">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="player-controls">
+                        <button id="prev-track" aria-label="Previous track">|◀</button>
+                        <button id="play-button" class="play-button" aria-label="Play music">▶</button>
+                        <button id="next-track" aria-label="Next track">▶|</button>
+
+                        <div class="volume-control">
+                            <span>VOL</span>
+                            <input
+                                type="range"
+                                id="volume-bar"
+                                min="0"
+                                max="1"
+                                step="0.01"
+                                value="0.8"
+                                aria-label="Volume"
+                            >
+                        </div>
+                    </div>
+
+                    <div class="player-bottom">
+                        <span>JOSIDE AUDIO PLAYER</span>
+                        <span id="player-status">SYSTEM READY</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- TRACK LIST -->
+            <div class="tracklist-section" data-reveal-child>
+                <div class="tracklist-heading">
+                    <h3>COMPOSITION ARCHIVE</h3>
+                    <span>MY ORIGINAL WORKS</span>
+                </div>
+
+                <button class="track-row active" data-track="0">
+                    <span class="track-index">01</span>
+                    <span class="track-name">Ayah, Coba Sekali Lagi — Track 01</span>
+                    <span class="track-type">ORIGINAL</span>
+                    <span class="track-duration">PLAY</span>
+                </button>
+
+                <button class="track-row" data-track="1">
+                    <span class="track-index">02</span>
+                    <span class="track-name">Ketuk Pintu Hati — Track 02</span>
+                    <span class="track-type">ORIGINAL</span>
+                    <span class="track-duration">PLAY</span>
+                </button>
+            </div>
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="music-footer">
+            <span>© 2026 JOSIDE.</span>
+            <span>MADE WITH FEELING & MUSIC.</span>
+            <a href="index.html">BACK TO PORTFOLIO ↑</a>
+        </footer>
+
+    </main>
+
+    <script src="js/music.js"></script>
+
+</body>
+</html>

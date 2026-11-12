@@ -416,3 +416,56 @@
         height: 24px;
     }
 }
+
+@media (max-width: 1024px) {
+    .hero-visual {
+        right: 30px;
+        width: 320px;
+        height: 420px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: auto;
+        padding: 140px 30px 80px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+    }
+
+    .hero-visual {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+
+        width: min(100%, 400px);
+        height: 460px;
+
+        margin: 0 auto;
+    }
+
+    @keyframes heroImageReveal {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-visual {
+        height: 390px;
+    }
+
+    .hero-image-label {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+}
