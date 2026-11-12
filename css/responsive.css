@@ -266,3 +266,153 @@
         font-size: 13px;
     }
 }
+
+@media (max-width: 900px) {
+    .content-section,
+    .about-section,
+    .skills-section,
+    .projects-section {
+        width: calc(100% - 48px);
+        padding: 85px 0;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .content-section,
+    .about-section,
+    .skills-section,
+    .projects-section {
+        width: calc(100% - 36px);
+        padding: 65px 0;
+    }
+
+    .about-profile {
+        min-height: 400px;
+        padding: 24px;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .stat-item {
+        padding: 22px;
+    }
+}
+
+
+/* =========================================
+   CONTACT — RESPONSIVE
+========================================= */
+
+@media (max-width: 1024px) {
+    .contact-section {
+        min-height: 560px;
+        padding: 90px 0;
+    }
+
+    .contact-content {
+        max-width: 620px;
+    }
+
+    .contact-decoration {
+        width: 220px;
+        height: 220px;
+        right: 0;
+        opacity: 0.6;
+    }
+
+    .contact-decoration span {
+        font-size: 125px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        min-height: auto;
+        padding: 90px 0;
+    }
+
+    .contact-content {
+        max-width: 100%;
+        padding: 20px 0;
+    }
+
+    .contact-content h2 {
+        max-width: 550px;
+        font-size: clamp(44px, 9vw, 65px);
+        letter-spacing: -2px;
+    }
+
+    .contact-decoration {
+        width: 170px;
+        height: 170px;
+        right: -40px;
+        top: 20%;
+        opacity: 0.25;
+    }
+
+    .contact-decoration span {
+        font-size: 95px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 70px 0;
+    }
+
+    .contact-content h2 {
+        font-size: 44px;
+        line-height: 1.15;
+    }
+
+    .contact-content p {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+
+    .contact-button {
+        margin-top: 28px;
+    }
+
+    .contact-decoration {
+        width: 130px;
+        height: 130px;
+        right: -55px;
+        top: 15%;
+    }
+
+    .contact-decoration span {
+        font-size: 75px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .contact-socials {
+        gap: 10px;
+        margin-top: 32px;
+    }
+
+    .social-link {
+        padding: 10px 12px;
+        gap: 8px;
+        font-size: 9px;
+    }
+
+    .social-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
