@@ -310,7 +310,7 @@
                 <div class="original-featured">
                     <div class="original-cover">
                         <img
-                            src="assets/images/music/original-cover.jpg"
+                            src="assets/images/music/original-cover.png"
                             alt="Original music cover"
                             onerror="this.style.display='none'"
                         >
@@ -381,6 +381,27 @@
                     </div>
 
 
+                    <div class="player-progress">
+
+                        <div class="progress-time">
+                            <span id="current-time">00:00</span>
+                            <span id="duration">00:00</span>
+                        </div>
+
+                        <input
+                            type="range"
+                            id="progress-bar"
+                            min="0"
+                            max="100"
+                            value="0"
+                            step="0.1"
+                            aria-label="Track progress"
+                        >
+
+                    </div>
+
+
+
                     <div class="player-controls">
                         <button id="prev-track" aria-label="Previous track">|◀</button>
                         <button id="play-button" class="play-button" aria-label="Play music">▶</button>
@@ -401,7 +422,7 @@
                     </div>
 
                     <div class="player-bottom">
-                        <span>JOSIDE AUDIO PLAYER</span>
+                        <span>JOSAN AUDIO PLAYER</span>
                         <span id="player-status">SYSTEM READY</span>
                     </div>
 
@@ -429,20 +450,55 @@
                     <span class="track-type">ORIGINAL</span>
                     <span class="track-duration">PLAY</span>
                 </button>
+
+                <button class="track-row" data-track="2">
+                    <span class="track-index">03</span>
+                    <span class="track-name">Pulang Lagi — Track 03</span>
+                    <span class="track-type">ORIGINAL</span>
+                    <span class="track-duration">PLAY</span>
+                </button>
+
+                <button class="track-row" data-track="3">
+                    <span class="track-index">04</span>
+                    <span class="track-name">Langkah Pulang — Track 04</span>
+                    <span class="track-type">ORIGINAL</span>
+                    <span class="track-duration">PLAY</span>
+                </button>
+
+                 <button class="track-row" data-track="4">
+                    <span class="track-index">05</span>
+                    <span class="track-name">Beyond the Door — Track 05</span>
+                    <span class="track-type">ORIGINAL</span>
+                    <span class="track-duration">PLAY</span>
+                </button>
+                
+                 <button class="track-row" data-track="5">
+                    <span class="track-index">06</span>
+                    <span class="track-name">The Way You Used to Know — Track 06</span>
+                    <span class="track-type">ORIGINAL</span>
+                    <span class="track-duration">PLAY</span>
+                </button>
+
+                 <button class="track-row" data-track="6">
+                    <span class="track-index">07</span>
+                    <span class="track-name">Merindukanmu Dalam Diam — Track 07</span>
+                    <span class="track-type">ORIGINAL</span>
+                    <span class="track-duration">PLAY</span>
+                </button>
             </div>
 
         </section>
 
         <!-- FOOTER -->
         <footer class="music-footer">
-            <span>© 2026 JOSIDE.</span>
+            <span>© 2026 JOSAN.</span>
             <span>MADE WITH FEELING & MUSIC.</span>
             <a href="index.html">BACK TO PORTFOLIO ↑</a>
         </footer>
 
     </main>
 
-    <script src="js/music.js"></script>
+    <script src="js/music.js?v=3"></script>></script>
 
 </body>
 </html>

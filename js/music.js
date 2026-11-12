@@ -37,6 +37,31 @@ const tracks = [
         title: "Ketuk Pintu Hati — Track 02",
         artist: "JOSAN",
         src: "assets/music_audio/Ketuk Pintu Hati.mp3"
+    },
+    {
+        title: "Pulang Lagi — Track 03",
+        artist: "JOSAN",
+        src: "assets/music_audio/Pulang Lagi.mp3"
+    },
+    {
+        title: "Langkah Pulang — Track 04",
+        artist: "JOSAN",
+        src: "assets/music_audio/Langkah Pulang.mp3"
+    },
+    {
+        title: "Beyond The Door — Track 05",
+        artist: "JOSAN",
+        src: "assets/music_audio/Beyond the Door.mp3"
+    },
+    {
+        title: "The Way You Used To Know — Track 06",
+        artist: "JOSAN",
+        src: "assets/music_audio/The Way You Used to Know.mp3"
+    },
+    {
+        title: "Merindukanmu Dalam Diam — Track 07",
+        artist: "JOSAN",
+        src: "assets/music_audio/Merindukanmu Dalam Diam.mp3"
     }
 ];
 
@@ -63,11 +88,29 @@ function formatTime(seconds) {
 // LOAD TRACK
 // =====================================
 function loadTrack(index) {
-    currentTrack = (index + tracks.length) % tracks.length;
+    if (index < 0 || index >= tracks.length) {
+        console.error("Track index tidak valid:", index);
+        return;
+    }
+
+    currentTrack = index;
 
     const track = tracks[currentTrack];
 
+    console.log("Loading track:", currentTrack, track.title);
+    console.log("Audio source:", track.src);
+
     audio.src = track.src;
+    audio.load();
+    
+    audio.addEventListener("error", () => {
+    console.error("Audio loading error:", audio.error);
+    console.error("Failed audio source:", audio.currentSrc);
+
+    if (playerStatus) {
+        playerStatus.textContent = "AUDIO FILE ERROR";
+    }
+});
 
     if (trackTitle) trackTitle.textContent = track.title;
     if (trackArtist) trackArtist.textContent = track.artist;
@@ -79,7 +122,9 @@ function loadTrack(index) {
         row.classList.toggle("active", rowIndex === currentTrack);
     });
 
-    if (playerStatus) playerStatus.textContent = "TRACK LOADED";
+    if (playerStatus) {
+        playerStatus.textContent = "TRACK LOADED";
+    }
 }
 
 /* =====================================
@@ -197,10 +242,14 @@ audio.addEventListener("ended", () => {
 // =====================================
 // TRACK LIST CLICK
 // =====================================
-
 trackRows.forEach((row) => {
     row.addEventListener("click", () => {
         const index = Number(row.dataset.track);
+
+        if (!Number.isInteger(index) || index < 0 || index >= tracks.length) {
+            console.error("Invalid track index:", row.dataset.track);
+            return;
+        }
 
         loadTrack(index);
         playMusic();
